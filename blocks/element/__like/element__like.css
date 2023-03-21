@@ -1,0 +1,19 @@
+.element__like {
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    height: 22px;
+    width: 22px;
+    background-image: url(../../../images/empty_heart.svg);
+    margin: auto 0 auto auto;
+}
+.element__like:hover {
+    opacity: 0.4;
+    cursor: pointer;
+    background-image: url(../../../images/hover_heart.svg);
+  }
+  .element__like:active {
+    opacity: 1;
+    background-image: url(../../../images/black_heart.svg);
+  }
+  
