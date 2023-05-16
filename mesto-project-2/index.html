@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project_Mesto</title>
+    <link rel="stylesheet" href="pages/index.css">
+</head>
+<body class="page">
+    <header class="header">
+    <img src="images/logo.svg" alt="Лого Mesto Russia" class="logo">
+    </header>
+    <main class="main">
+        <section class="profile">
+            <img src="images/Jak.jpg" alt="Ава профиля" class="profile__ava">
+            <div class="profile__info">
+                <h1 class="profile__title">Жак-Ив Кусто</h1>
+                <button type="button" class="profile__edit-button"></button>    
+                <h2 class="profile__description">Исследователь океана</h2>
+            </div>
+            <button type="button" class="profile__add-button"></button>
+        </section>
+        <section class="elements">
+
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">© 2023 Mesto Russia</p>
+    </footer>
+        <div class="popup" id="popup__edit_form">
+            <div class="popup__container">
+                <h2 class="popup__title">Редактировать профиль</h2>
+                <form class="popup__form" action="#" name="popup__form" id="form_edit">
+                        <input name="popup__input-name" class="popup__input" type="text" value="Жак-Ив Кусто" id="popup__input-name-edit">
+                        <input name="popup__input-description" class="popup__input" type="text" value="Исследователь океана" id="popup__input-description-edit">
+                <input class="popup__submit-button" type="submit" value="Сохранить">
+                </form>
+              <button class="popup__close-button" aria-label="Закрыть окно" type="button" id="close_edit"></button>
+            </div>
+        </div>
+        <div class="popup" id="popup__add_form">
+            <div class="popup__container">
+                <h2 class="popup__title">Новое место</h2>
+                <form class="popup__form" action="#" name="popup__form" id="form_add">
+                        <input name="popup__input-name" class="popup__input" type="text" value="Название" id="popup__input-name-add">
+                        <input name="popup__input-description" class="popup__input" type="text" value="Ссылка на картинку" id="popup__input-description-add">
+                <input class="popup__submit-button" type="submit" value="Сохранить">
+                </form>
+              <button class="popup__close-button" aria-label="Закрыть окно" type="button" id="close_add"></button>
+            </div>
+        </div>
+        <div class="popup"  id="popup__pic_open">
+            <div class="popup__pic-container">
+                <img src="images/fish.jpg" alt="Большое фото" class="popup__pic" id="popup__pic">
+                <h2 class="popup__pic_title" id="popup__pic_title">Рыба</h2>
+              <button class="popup__close-button" aria-label="Закрыть окно" type="button" id="close_pic"></button>
+            </div>
+        </div>
+    <template id="template-element">            
+        <article class="element">
+            <img src="images/fish.jpg" alt="Рыба под водой" class="element__image" id="element__image">
+            <div class="element__description">
+                <h2 class="element__text" id="element__text">Рыба</h2>
+                <button type="button" class="element__like" id="like"></button>
+            </div>
+            <button type="button" class="element__delete" id="element__delete"></button>
+        </article>
+    </template>
+    <script src="script.js"></script>
+    </body>
+    </html>
+
+    
