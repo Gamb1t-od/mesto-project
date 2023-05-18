@@ -1,0 +1,7 @@
+.element__like_active {
+    opacity: 1 !important; 
+    background-image: url(../../../../images/black_heart.svg) !important;
+  }
+  .element__like_active:hover {
+    opacity: 0.5 !important;
+  }
